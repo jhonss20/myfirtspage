@@ -82,7 +82,7 @@
         <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
         <button id="btnNo" onmouseover="mueveElBoton()">No</button>
       </div>
-      <img src="2.jpg" alt="" width="200">
+      <img src="2.jpg" />
     </div>
   
     <script>
@@ -90,7 +90,7 @@
         const respuesta = confirm("¿Estás segura de querer ser mi novia?");
         if (respuesta) {
           // Redireccionar a la nueva página si responde "Sí"
-          window.location.href = "opcionsi.html";
+          escritorio.location.archivos = "optionsi.html";
         } else {
           alert("Espero que puedas reconsiderarlo 😊");
         }
