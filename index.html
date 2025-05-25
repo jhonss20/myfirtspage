@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Quieres ser mi novia?</title>
+  <title>¿Puedo ser tu novio?</title>
   <style>
     body {
       margin: 0;
@@ -77,12 +77,12 @@
 </head>
 <body>
     <div id="container">
-      <h1>¿Quieres ser mi novia?</h1>
+      <h1>¿Puedo ser tu novio?</h1>
       <div id="buttons">
         <button onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi">Sí</button>
         <button id="btnNo" onmouseover="mueveElBoton()">No</button>
       </div>
-     <img src="archivos/2.jpeg" alt="">
+     <img src="2.jpeg" alt="" width="200"/>
     </div>
   
     <script>
@@ -90,8 +90,8 @@
         const respuesta = confirm("¿Estás segura de querer ser mi novia?");
         if (respuesta) {
           // Redireccionar a la nueva página si responde "Sí"
-          escritorio.archivos.= "optionsi.html";
-        } else {
+          window.location.href = "optionsi.html";
+         
           alert("Espero que puedas reconsiderarlo 😊");
         }
       }
